@@ -1,6 +1,3 @@
-
-import java.util.HashSet;
-
 // // merge sort - telusko yt
 //1.divide the array using mid
 //2.recurcively call first half or array and second half of array (call mergsort 2 times)
@@ -299,4 +296,41 @@ import java.util.HashSet;
 
 //     }
 // }
+//_______________________________________________________________________________________________________________________________________________________
+// //valid paranthesis 
+// //push it into stack if its open(
+// //if closed appears) -> check stack if the stack is emply then its invalid
+// //if not empty . chck the top element of the stack if its opening match then we pop the matching opening out of the stack
+// //if not matched then its invalid
+// //at end if the stack is empty then valid.
+// import java.util.*;
+// class Main{
+//     public static void main(String [] args)
+//     {
+//         String str = "{{()}}";
+//         char [] arr = str.toCharArray();
+//         Stack<Character> stk = new Stack<>();
+//         for(char ch : arr)
+//         {
+//             if(ch == '{' || ch == '(' || ch == '[')
+//             {
+//                 stk.add(ch);
+//             }
+//             else
+//             {
+//                 if(stk.isEmpty())
+//                 {
+//                     System.out.println("in valid");
+//                 }
+//                 char top = stk.pop();
+//                 if(ch == '}' && top != '{' || ch == ')' && top != '(' || ch == ']' && top != '[')
+//                 {
+//                     System.out.println("in valid");
+//                 }
+//             }
+//         }
 
+//         System.out.println(stk.isEmpty());
+
+//     }
+// }
