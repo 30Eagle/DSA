@@ -1,3 +1,43 @@
+////Quick sort
+// import java.util.*;
+// class Main{
+//     public static void main(String [] args)
+//     {
+//         int [] arr = {2,31,4,6,7};
+//         quickSort(arr, 0, arr.length-1);
+//         System.out.println(Arrays.toString(arr));
+//     }
+//     public static void quickSort(int [] arr, int low, int high)
+//     {
+//         if(low < high)
+//         {
+//             int pi = pivot(arr, low, high);
+//             quickSort(arr, low, pi-1);
+//             quickSort(arr, pi+1, high);
+//         }
+//     }
+//     public static int pivot(int [] arr, int low, int high)
+//     {
+//         int piv = arr[high];
+//         int i = low - 1;
+//         for(int j = low; j < high; j++)
+//         {
+//             if(arr[j] < piv)
+//             {
+//                 i++;
+//                 int temp = arr[j];
+//                 arr[j] = arr[i];
+//                 arr[i] = temp;
+//             }
+//         }
+//         int tmep = arr[i+1];
+//         arr[i+1] = arr[high];
+//         arr[high] = tmep;
+//         return i+1;
+        
+//     }
+// }
+// _____________________________________________________________________________________________________________________________________________________
 // // merge sort - telusko yt
 //1.divide the array using mid
 //2.recurcively call first half or array and second half of array (call mergsort 2 times)
@@ -121,11 +161,21 @@
 //     }
 // }
 //_____________________________________________________________________________________________________________________________________________________________
-//remove duplicates using two pointers.
+// //remove duplicates using two pointers.
+// //So that all duplicates are next to each other.
+// //i – keeps track of the position of the last unique number.
+// //j – moves through the array to check for new numbers.
+// //If nums[j] is different from nums[i], it's a new unique number.
+// //Move i forward by 1.
+// //Copy nums[j] to nums[i].
+// //Repeat this until j reaches the end of the array.
+// //Now, the first (i + 1) elements in the array are all the unique numbers.
+// import java.util.*;
 // class Main{
 //     public static void main(String [] args)
 //     {
 //         int [] nums = {3,4,1,4,5,2};
+//         Arrays.sort(nums);
 //         int i  = 0;
 //         for(int j = 1; j < nums.length; j++)
 //         {
@@ -334,3 +384,137 @@
 
 //     }
 // }
+//______________________________________________________________________________________________________________________________________________________
+// class Main{
+//     public static void main(String [] args)
+//     {
+//         Computer lap = new Laptop();
+//         Computer des = new Desktop();
+//         Developer dev = new Developer();
+//         dev.devApp(lap);
+
+//     }
+// }
+
+// interface Computer
+// {
+//      void code();
+// }
+// class Laptop implements Computer
+// {
+//     @Override
+//     public void code()
+//     {
+//         System.out.println("laptop");
+//     }
+
+// }
+// class Desktop implements Computer
+// {
+//     @Override
+//     public void code()
+//     {
+//         System.out.println("Desktop");
+//     }
+
+// }
+// class Developer
+// {
+//     public void devApp(Computer comp)
+//     {
+//         comp.code();
+//     }
+
+// }
+//_________________________________________________________________________________________________________________________________________________
+//Inheritance
+// class Main{
+//     public static void main(String[] args) 
+//     {
+//         A a = new A();
+//         B obj = new B();
+//         System.out.println(obj.b);
+//     }
+// }
+// class A 
+// {
+//     int a = 20;
+// }
+// class B extends A 
+// {
+//     int b = 40;
+// }
+//__________________________________________________________________________________________________________________________________________________
+//encapsulation
+// class Main
+// {
+//     public static void main(String [] args)
+//     {
+//         Person obj = new Person(25);
+//         obj.setAge(2);
+//         System.out.println(obj.getAge());
+//     }
+// }
+// class Person
+// {
+//    private int age;
+//    public Person(int age)
+//    {
+//     this.age = age;
+//     setAge(age);
+//    }
+//    public void setAge(int age)
+//    {
+//     this.age = age;
+//    }
+//    public int getAge()
+//    {
+//     return age;
+//    }
+// }
+//_________________________________________________________________________________________________________________________________________________
+//overloding
+// class Main{
+//     public static void main(String [] args)
+//     {
+//         sum obj = new sum();
+//         System.out.println(obj.add(1,2));
+//         System.out.println(obj.add(1));
+//     }
+// }
+// class sum{
+//     public static int  add(int a, int b)
+//     {
+//         return a+b;
+//     }
+//     public static int  add(int a)
+//     {
+//         return a+1;
+//     }
+// }
+//______________________________________________________________________________________________________________________________________________
+////Overriding
+// import java.util.*;
+// class Main{
+//     public static void main(String [] args)
+//     {
+//         A obj = new B();
+//         System.out.println(obj.sum(2,3));
+//     }
+// }
+// class A 
+// {
+//     public  int sum(int a, int b)
+//     {
+//         return a+b;
+//     }
+// }
+// class B extends A
+// {
+//     @Override
+//     public  int sum(int a, int b)
+//     {
+//         return a+1;
+//     }
+// }
+//_________________________________________________________________________________________________________________________________________________
