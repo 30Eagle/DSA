@@ -554,3 +554,24 @@
 //         }
 //     }
 // }
+//______________________________________________________________________________________________________________________________________________________________________
+//any number %2 be zero or one
+//number to decimal
+// class Main{
+//     public static void main(String [] args)
+//     {
+//         int n = 5;
+//         int [] arr = new int[n+1];
+//         int c = 0;
+//         while(n > 0)
+//         {
+//             arr[c] = n % 2;
+//             c++;
+//             n = n / 2;
+//         }
+//         for(int i = c-1; i >= 0; i--)
+//         {
+//             System.out.println(arr[i]);
+//         }
+//     }
+// }
