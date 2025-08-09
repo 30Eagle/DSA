@@ -1,4 +1,4 @@
-////Quick sort
+////Quick Sort
 // import java.util.*;
 // class Main{
 //     public static void main(String [] args)
@@ -518,3 +518,39 @@
 //     }
 // }
 //_________________________________________________________________________________________________________________________________________________
+//count number of one bits - brian kerninghan's algorithm
+// class Main{
+//     public static void main(String [] args)
+//     {
+//         int n = 5;
+//         int count = 0;
+//         while(n != 0)
+//         {
+//             n = n & (n-1);
+//             count ++;
+//         }
+//         System.out.println(count);
+//     }
+// }
+//_________________________________________________________________________________________________________________________________________________
+//231. Power of Two
+// class Main{
+//     public static void main(String [] args)
+//     {
+//         int n = 5;
+//         int count = 0;
+//         while(n != 0)
+//         {
+//             n = n & (n-1);
+//             count++;
+//         }
+//         if(n == 1)
+//         {
+//             System.out.println("n is power of 2");
+//         }
+//         else
+//         {
+//             System.out.println("no");
+//         }
+//     }
+// }
